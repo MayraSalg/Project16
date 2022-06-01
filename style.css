@@ -303,11 +303,21 @@ section .text-for-767px{
         url("fonts/TTLakes-Regular.ttf") format("ttf");
 
     }
+    .brands__item-repair p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        font-family: "TTLakes-Regular", sans-serif;
+        position: relative;
+        text-align: left;
+        height:140px;
+    }
     .repair-types{
         position: relative;
         display: flex;
         width:100%;
-        height:322px;
+        height:422px;
         border-top: 1px solid #D9FFF5;
         overflow: hidden;
         background-color: #F8F8F8;
@@ -315,6 +325,32 @@ section .text-for-767px{
         margin-left: -8px;
         padding-right: 16px;
         top:725px;
+    }
+    .repair-types__title{
+        padding:16px;
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: -0.2px;
+        color: #7E7E82;
+        font-family: "TTLakes-Regular", sans-serif;
+         position: absolute;
+        background-color: white;
+        padding-right: 100%;
+        width:100%;
+        border-top: 1px solid #D9FFF5;
+        top:100px;
+}
+    .swiper.repair {
+        display: block;
+        width: 260px;
+        height: 200px;
+        position: relative;
+        top:185px;
+        left:14px;
     }
     .brands{
         display: flex;
@@ -355,6 +391,27 @@ section .text-for-767px{
         top:92px;
 
     }
+    .swiper-slide .brands__item-repair{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 204px;
+        height: 160px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-right: 16px;
+        flex-shrink: 0;
+        background-color: white;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        position: static;
+        top:16px;
+
+    }
+    .swiper-pagination.repair{
+        position: relative;
+        top:-30px;
+    }
     .brands__item{
         display: flex;
         align-items: center;
@@ -372,6 +429,13 @@ section .text-for-767px{
         top:16px;
 
     }
+    .brands__item-repair .icon-swiper{
+        width:40px;
+        height:40px;
+        position: relative;
+        top:50px;
+    }
+
     .icon-swiper{
         width:40px;
         height:40px;
