@@ -315,13 +315,15 @@ section .text-for-767px{
     }
 .brands__prices-repair p{
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: -0.2px;
     font-family: "TTLakes-Regular", sans-serif;
     position: relative;
     text-align: left;
     height:140px;
+    margin-top:-20px;
+    color: #7E7E82;
 }
     .repair-types{
         position: relative;
@@ -365,8 +367,8 @@ section .text-for-767px{
     }
     .swiper.prices {
         display: block;
-        width: 260px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         position: relative;
         top:92px;
         left:14px;
@@ -374,7 +376,7 @@ section .text-for-767px{
     .prices{
         display: flex;
         width:100%;;
-        height:334px;
+        height:734px;
         top:1155px;
         overflow: hidden;
         background-color: #F8F8F8;
@@ -459,8 +461,8 @@ section .text-for-767px{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 204px;
-        height: 160px;
+        width: 260px;
+        height: 200px;
         padding-left: 16px;
         padding-right: 16px;
         margin-right: 16px;
@@ -475,6 +477,12 @@ section .text-for-767px{
     .swiper-pagination.repair{
         position: relative;
         top:-30px;
+    }
+    .swiper-pagination.prices{
+        position: relative;
+        top:-70px;
+        margin-left:120px;
+
     }
     .brands__item{
         display: flex;
@@ -505,6 +513,12 @@ section .text-for-767px{
         height:40px;
         position: relative;
     }
+    .brands__prices-repair .icon-order{
+
+        height:32px;
+        position: relative;
+        top:70px;
+    }
     .swiper {
         display: block;
         width: 260px;
@@ -515,6 +529,72 @@ section .text-for-767px{
     .swiper-pagination{
         position: relative;
         top:88px;
+    }
+    .section-description {
+        position: absolute;
+        width:72%;
+        height:137px;
+        top:315px;
+        z-index: 1;
+        font-family: "TTLakes-Regular", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        padding-left:10%;
+
+    }
+    .section-description p:nth-child(2){
+        position: relative;
+        width:72%;
+        height:137px;
+        top:10px;
+        font-family: "TTLakes-Regular", sans-serif;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+    .section-description a{
+        text-decoration: none;
+        color:black;
+    }
+    .arrowRight{
+        position: relative;
+        width:11px;
+        height:8px;
+        top:-113px;
+        left:97px;
+    }
+    .footer-container{
+        position: relative;
+        background-color: #F8F8F8;
+        width:100%;
+        height:300px;
+        top:1300px;
+        border-top: #B8FFEC 1px solid;
+        margin-left:-7px;
+        padding-right:11px;
+    }
+    .footer-container p{
+        font-family: "TTLakes-Regular", sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        padding-left: 40px;
+        color: #7E7E82;
+    }
+    .footer-container p:nth-child(1){
+        width:71%;
+        height:32px;
+        text-align:center;
+    }
+    .footer-container p:nth-child(2){
+        width:70%;
+        height:16px;
+        text-align:center;
+    }
+    .footer-container p:nth-child(3){
+        width:93%;
+        height:32px;
+        text-align: center;
+        padding-left:10px;
     }
     .brands-repair{
         display: none;
