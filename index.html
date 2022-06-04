@@ -11,12 +11,15 @@
 </head>
 <body>
 <header>
+
     <a href="#">
-        <div class="header__menu-button">
+
+        <div class="header__menu-button" id="myBtn">
             <div class="menu-button_line-1">  </div>
             <div class="menu-button_line-2">  </div>
             <div class="menu-button_line-3">  </div>
         </div>
+
     </a>
 
     <div class="header__logo-container">
@@ -512,6 +515,78 @@
 
     </div>
 </section>
+<!-- Сайдбар слева-->
+
+<section class="navigation-menu"id="mypopup">
+
+            <a href="#">
+                <div class="navigation__header-menu">
+                    <div class="navigation__close-button">
+                        <div class="close-button_inside-element" id="close">
+                        </div>
+                    </div>
+                    <div class="navigation__logo-button"><! -- Лого-->
+                    </div>
+                    <div class="navigation__search-button">
+                        <div class="search-button_inside-element">
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="navigation-body">
+                <div class="navigation-body-container">
+                    <div class="navigation-body-container__decoration">
+                    </div>
+                    <div class="navigation-links">
+                        <ul class="menu-list">
+                            <li><a class="menu-list__first-element" href="#">Ремонт техники</a></li>
+                            <li><a href="#">Услуги и сервисы</a></li>
+                            <li><a href="#">Корпоративным клиентам</a></li>
+                            <li><a href="#">Продавцам техники</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="#">Производителям</a></li>
+                            <li><a href="#">Наши сервисные центры</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="navigation__info">
+
+                        <div class="action-buttons navigation__action-buttons">
+                            <a href="#">
+                                <div class="action-buttons__tel">
+                                    <div class="tel_inside-element">
+                                    </div>
+                                </div>
+                                <div class="action-buttons__message"><! -- Сообщение иконка-->
+                                    <div class="message_inside-element">
+                                    </div>
+                                </div>
+                                <div class="action-buttons__contact"><! -- Контакт иконка-->
+                                    <div class="contact_inside-element">
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="navigation__contacts">
+                                mail@cps.com
+                                <h1>8 800 890 8900</h1>
+                            </div>
+                            <div class="navigation__languages">
+                                <a href="#">
+                                    <span class="languages__RU"> RU</span>
+                                    <span class="languages__EN"> EN</span>
+                                    <span class="languages__CH"> CH</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</section>
+
 <footer>
     <div class="footer-container">
         <p class="about">
@@ -529,6 +604,6 @@
 </footer>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
-
+<script src="js/menu.js"></script>
 </body>
 </html>
