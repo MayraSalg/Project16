@@ -10,6 +10,7 @@ let callBackMess = document.getElementById("mess");
 let callBackName = document.getElementById("name");
 let callBackEmail = document.getElementById("email");
 let callBackFooter = document.querySelector(".reply-footer");
+
 popUpToggle.onclick = function (){
     popUp.style.display="flex";
     popUp.style.width="320px"; //открыть главное меню
@@ -30,8 +31,10 @@ replyOpen.onclick = function (){
     popUp.style.width="0px";
     popUp.style.height="0px";
     callBackText.textContent="Обратная связь";
-    callBackMess.classList.add(".reply-body__form");
+
     callBackFooter.style.top="0px";
+
+
 }
 replyClose.onclick = function (){
     reply.style.display="none";         //закрыть reply

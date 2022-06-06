@@ -878,7 +878,7 @@ section .text-for-767px{
        z-index: 7;
    }
    .reply-body__form{
-       display: inline;
+
        width:268px;
        height:48px;
        margin-left:16px;
@@ -887,10 +887,12 @@ section .text-for-767px{
        font-family:"TTLakes-Regular",sans-serif;
        padding-left:16px;
    }
-   .reply-body__form:nth-child(2),
-   .reply-body__form:nth-child(3),
-   .reply-body__form:nth-child(4)
+    .reply-body__form:nth-child(1){
+        display: inline;
+    }
+    .reply-body__form:not(:first-of-type)
    {
+        display: inline;
        margin-top:16px;
    }
     .reply-body__form:nth-child(4){
@@ -928,6 +930,8 @@ section .text-for-767px{
         top: 350px;
         left: 167px;
     }
+
+
     /* Конец меню реплай */
     .footer-container{
         position: relative;
@@ -1061,8 +1065,6 @@ section .text-for-767px{
         background-repeat: no-repeat;
         background-size: 99px 50px;
     }
-
-
     section.repair-button {
         display: none;
     }
@@ -1186,14 +1188,6 @@ section .text-for-767px{
         font-size: 28px;
         color: #1B1C21;
         letter-spacing: -0.6px;
-
-    }
-
-    .section-green-line {
-        width: 4px;
-        height: 40px;
-        margin-top: 24px;
-        background-image: url("img/highlight.svg")
 
     }
 
@@ -1401,6 +1395,18 @@ section .text-for-767px{
         top:79px;
         align-items: stretch;
     }
+    .brands-repair-types{
+        display: flex;
+        position: relative;
+        top:24px;
+        flex-wrap: wrap;
+        width:720px;
+        height:208px;
+        background-color:#F8F8F8;
+        margin-left:24px;
+        top:79px;
+        align-items: stretch;
+    }
     .brands__list {
         display: flex;
         position: relative;
@@ -1418,6 +1424,19 @@ section .text-for-767px{
         margin-bottom: 35px;
     }
     .content{
+        position: relative;
+        max-height:0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .prices{
+        top:1755px;
+    }
+    .accordion-repair a{
+        text-decoration: none;
+        color:black;
+    }
+    .content-accordion-repair{
         position: relative;
         max-height:0;
         overflow: hidden;
@@ -1446,11 +1465,22 @@ section .text-for-767px{
         height:0;
         display: none;
     }
+    .brands__item-repair:nth-child(4),
+    .brands__item-repair:nth-child(5),
+    .brands__item-repair:nth-child(6),
+    .brands__item-repair:nth-child(7)
+    {
+        position: relative;
+        height:0;
+        display: none;
+    }
     .brands__item:nth-child(10),
     .brands__item:nth-child(11)
     {
         display:none;
     }
+
+
     .text-in{
         display: none;
         font-family: "TTLakes-Regular", sans-serif;
@@ -1463,8 +1493,40 @@ section .text-for-767px{
         position: relative;
         right:110px;
     }
-
-
+    .repair-types {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 422px;
+        border-top: 1px solid #D9FFF5;
+        overflow: hidden;
+        background-color: #F8F8F8;
+        margin-top: -8px;
+        margin-left: -8px;
+        padding-right: 16px;
+        top: 511px;
+    }
+.repair-types__title{
+    top:0;
+}
+    .swiper.repair{
+        display: none;
+    }
+    .brands__item-repair {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 190px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-right: 16px;
+        flex-shrink: 0;
+        background-color: white;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        position: static;
+        top: 16px;
+    }
     header {
         background-color:white;
         height: 88px;
@@ -1667,13 +1729,14 @@ section .text-for-767px{
     }
     .bordered-menu-element{
         display: flex;
-        left:-17px;
+        left:-8px;
         background: #FFFFFF;
         border: 2px solid #B8FFEC;
         border-radius: 6px;
         position: relative;
         height: 24px;
         width:246px;
+        padding-right: 15px;
 
     }
     ul li{
