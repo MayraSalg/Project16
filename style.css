@@ -514,7 +514,7 @@ section .text-for-767px{
         position: relative;
     }
     .brands__prices-repair .icon-order{
-
+        right:130px;
         height:32px;
         position: relative;
         top:70px;
@@ -562,6 +562,22 @@ section .text-for-767px{
         height:8px;
         top:-113px;
         left:97px;
+    }
+    dt{
+        position: relative;
+        margin-bottom: 40px;
+        font-family: "TTLakes-Regular", sans-serif;
+        font-size: 14px;
+        color:#7E7E82;
+    }
+    dd{
+        position: relative;
+        font-family: "TTLakes-Regular", sans-serif;
+        font-size: 14px;
+        width:228px;
+        top:-35px;
+        margin-bottom: -25px;
+        right:40px;
     }
 
     /* Меню */
@@ -862,6 +878,7 @@ section .text-for-767px{
        z-index: 7;
    }
    .reply-body__form{
+       display: inline;
        width:268px;
        height:48px;
        margin-left:16px;
@@ -884,7 +901,7 @@ section .text-for-767px{
     }
     .reply-footer{
         position: relative;
-
+        top:0px;
         width:288px;
         z-index: 7;
         height:64px;
@@ -898,7 +915,7 @@ section .text-for-767px{
         font-size: 14px;
         color: #7E7E82;
         z-index: 7;
-        top: 280px;
+        top: 330px;
     }
     .colortext{
         color: #FF3E79;
@@ -908,7 +925,7 @@ section .text-for-767px{
     }
     .submit-img{
         position: relative;
-        top: 300px;
+        top: 350px;
         left: 167px;
     }
     /* Конец меню реплай */
