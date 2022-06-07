@@ -8,13 +8,16 @@ document.querySelectorAll(".accordion-repair").forEach((el)=>{
         let hiddenBrandsRepFive = document.querySelector(".brands__item-repair:nth-child(5)");
         let hiddenBrandsRepSix = document.querySelector(".brands__item-repair:nth-child(6)");
         let hiddenBrandsRepSeven = document.querySelector(".brands__item-repair:nth-child(7)");
-        let hiddenBrandsRepEleven = document.querySelector(".brands__item-repair:nth-child(11)");
+        let hiddenBrandsRepEight = document.querySelector(".brands__item-repair:nth-child(8)");
+        let hiddenBrandsRepNine = document.querySelector(".brands__item-repair:nth-child(9)");
+        let hiddenBrandsRepTen = document.querySelector(".brands__item-repair:nth-child(10)");
         let hiddentext = document.querySelector(".text-in-repair");
         let pageWidth = window.innerWidth;
         let textOut = document.querySelector(".text-out-repair");
+        let priceSection = document.querySelector(".prices");
+
         if(contentAccordion.style.maxHeight){
             document.querySelectorAll('.contentAccordion').forEach((el)=>el.style.maxHeight = null)
-
             repairTypes.style.height = "334px";
             brandsRepairTypes.style.height="208px";
             hiddenBrands.style.display="none";
@@ -25,36 +28,28 @@ document.querySelectorAll(".accordion-repair").forEach((el)=>{
             hiddenBrandsRepSix.style.height="0";
             hiddenBrandsRepSeven.style.display="none";
             hiddenBrandsRepSeven.style.height="0";
+            hiddenBrandsRepEight.style.display="none";
+            hiddenBrandsRepEight.style.height="0";
+            hiddenBrandsRepNine.style.display="none";
+            hiddenBrandsRepNine.style.height="0";
+            hiddenBrandsRepTen.style.display="none";
+            hiddenBrandsRepTen.style.height="0";
             hiddentext.style.display="none";
-            textOut.style.top = "9px";
+            textOut.style.top = "15px";
             textOut.style.left = "30px";
             textOut.style.display = "inline";
+            priceSection.style.top="1165px";
         }
         else{
             document.querySelectorAll('.contentAccordion').forEach((el)=>el.style.maxHeight = null)
             contentAccordion.style.maxHeight = contentAccordion.scrollHeight + 'px'
 
-
             if (pageWidth >=1120){
-                brands.style.height = "550px";
-                textOut.style.top = "160px";
-                textOut.style.left = "-730px"
-                brands.style.height = "500px";
-                brandsRepair.style.height="310px";
-                hiddenBrands.style.display="flex";
-                hiddenBrands.style.height="68px";
-                hiddenBrandsEight.style.display="flex";
-                hiddenBrandsEight.style.height="68px";
-                hiddenBrandsNine.style.display="flex";
-                hiddenBrandsNine.style.height="68px";
-                hiddenBrandsTen.style.height="68px";
-                hiddenBrandsEleven.style.height="68px";
-                textOut.style.display = "none";
-                hiddentext.style.display="inline";
             }
             else{
                 repairTypes.style.height = "870px";
                 brandsRepairTypes.style.height="310px";
+                priceSection.style.top="1705px";
                 hiddenBrands.style.display="flex";
                 hiddenBrands.style.height="160px";
                 hiddenBrandsRepFive.style.display="flex";
@@ -63,6 +58,12 @@ document.querySelectorAll(".accordion-repair").forEach((el)=>{
                 hiddenBrandsRepSix.style.height="160px";
                 hiddenBrandsRepSeven.style.display="flex";
                 hiddenBrandsRepSeven.style.height="160px";
+                hiddenBrandsRepEight.style.display="flex";
+                hiddenBrandsRepEight.style.height="160px";
+                hiddenBrandsRepNine.style.display="flex";
+                hiddenBrandsRepNine.style.height="160px";
+                hiddenBrandsRepTen.style.display="flex";
+                hiddenBrandsRepTen.style.height="160px";
                 textOut.style.top = "25px";
                 textOut.style.display = "none";
                 hiddentext.style.display="inline";

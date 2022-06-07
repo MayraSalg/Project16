@@ -1269,7 +1269,9 @@ section .text-for-767px{
     section .repair-button {
         visibility: hidden;
     }
-
+    .brands-repair-types.container{
+        display: none;
+    }
     section .container-for-img {
         position: absolute;
         display: flex;
@@ -1365,6 +1367,20 @@ section .text-for-767px{
         position: absolute;
         visibility: hidden;
     }
+    .brands__item-repair:nth-child(4),
+    .brands__item-repair:nth-child(5),
+    .brands__item-repair:nth-child(6),
+    .brands__item-repair:nth-child(7),
+    .brands__item-repair:nth-child(8),
+    .brands__item-repair:nth-child(9),
+    .brands__item-repair:nth-child(10)
+    {
+        position: relative;
+        height:0;
+        display: none;
+        margin-bottom:20px;
+        display: none;
+    }
 }
 @media(min-width:768px) {
     .brands{
@@ -1394,6 +1410,7 @@ section .text-for-767px{
         margin-left:24px;
         top:79px;
         align-items: stretch;
+
     }
     .brands-repair-types{
         display: flex;
@@ -1404,8 +1421,16 @@ section .text-for-767px{
         height:208px;
         background-color:#F8F8F8;
         margin-left:24px;
-        top:79px;
+        top: 85px;
+        margin-bottom: 20px;
         align-items: stretch;
+    }
+    .brands-repair-types.container{
+        display: flex;
+    }
+    .prices{
+        top:1165px;
+        height:720px;
     }
     .brands__list {
         display: flex;
@@ -1429,9 +1454,7 @@ section .text-for-767px{
         overflow: hidden;
         transition: 0.3s;
     }
-    .prices{
-        top:1755px;
-    }
+
     .accordion-repair a{
         text-decoration: none;
         color:black;
@@ -1468,10 +1491,15 @@ section .text-for-767px{
     .brands__item-repair:nth-child(4),
     .brands__item-repair:nth-child(5),
     .brands__item-repair:nth-child(6),
-    .brands__item-repair:nth-child(7)
+    .brands__item-repair:nth-child(7),
+    .brands__item-repair:nth-child(8),
+    .brands__item-repair:nth-child(9),
+    .brands__item-repair:nth-child(10)
     {
         position: relative;
         height:0;
+        display: none;
+        margin-bottom:20px;
         display: none;
     }
     .brands__item:nth-child(10),
@@ -1480,7 +1508,21 @@ section .text-for-767px{
         display:none;
     }
 
-
+   .text-out-repair{
+       position: relative;
+       left:25px;
+       top:25px;
+   }
+   .text-in-repair{
+       display: none;
+       font-family: "TTLakes-Regular", sans-serif;
+       font-size: 16px;
+       position: relative;
+       left:40px;
+       top:20px;
+       left:-210px;
+       top:205px;
+   }
     .text-in{
         display: none;
         font-family: "TTLakes-Regular", sans-serif;
@@ -1497,7 +1539,7 @@ section .text-for-767px{
         position: relative;
         display: flex;
         width: 100%;
-        height: 422px;
+        height: 330px;
         border-top: 1px solid #D9FFF5;
         overflow: hidden;
         background-color: #F8F8F8;
@@ -1506,12 +1548,93 @@ section .text-for-767px{
         padding-right: 16px;
         top: 511px;
     }
+    .footer-container{
+        position: relative;
+        height:150px;
+        top:1230px;
+    }
+    .footer-container .about{
+        position: relative;
+        left:-20px;
+        text-align: left;
+        width:218px;
+        display:flex;
+        top:30px;
+    }
+    .footer-container .confidential{
+        position: relative;
+        left:250px;
+        text-align: center;
+        width:218px;
+        display:flex;
+    }
 .repair-types__title{
     top:0;
 }
     .swiper.repair{
         display: none;
     }
+    .swiper.prices{
+        display: none;
+    }
+    .section-description{
+        display: none;
+    }
+    .brands__prices-table__hat{
+        font-family: "TTLakes-Regular", sans-serif;
+        font-size: 16px;
+        color: #9B9B9B;
+        position: relative;
+        top:-50px;
+        left:20px;
+    }
+    .brands__prices-table__hat p:nth-child(2){
+        position: relative;
+        top:-38px;
+        left:375px;
+    }
+    .brands__prices-table__hat p:nth-child(3){
+        position: relative;
+        top:-77px;
+        left:457px;
+    }
+
+    .brands__prices-table{
+        position: relative;
+        background-color: white;
+        width:720px;
+        top:120px;
+        left:20px;
+        height:395px;
+        border-radius: 6px;
+
+    }
+    .brands__prices-repair{
+        position: relative;
+        padding-right:40px;
+        top:-130px;
+        font-family: "TTLakes-Regular", sans-serif;
+        font-size: 14px;
+
+        width:720px;
+        left:18px;
+    }
+    .order-img{
+        position: relative;
+        left:20px;
+        top:0px;
+    }
+    td{
+        position: relative;
+        border-bottom: 1px solid #EAEAEA;
+        padding-bottom:20px;
+        padding-top:20px;
+
+    }
+    tr:last-child td{
+        border-bottom:0px;
+    }
+
     .brands__item-repair {
         display: flex;
         align-items: center;
@@ -1526,6 +1649,23 @@ section .text-for-767px{
         border-radius: 6px;
         position: static;
         top: 16px;
+    }
+    .section-description__prices{
+        position: relative;
+        top:-110px;
+        font-family: "TTLakes-Regular", sans-serif;
+        font-size: 14px;
+        width:420px;
+        height:60px;
+    }
+    .section-description__prices p:nth-child(2){
+        font-family: "TTLakes-Bold", sans-serif;
+        font-weight: Bold;
+    }
+    .arrowRight__prices{
+        position: relative;
+        top:-32px;
+        left:276px;
     }
     header {
         background-color:white;
