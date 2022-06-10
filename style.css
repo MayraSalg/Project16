@@ -1793,7 +1793,7 @@ section .text-for-767px{
     }
     .call-back{
         position: relative;
-        top:-733px;
+        top:-742px;
     }
 
     .search-button {
@@ -2164,6 +2164,7 @@ section .text-for-767px{
         height :535px;
         background-color:#F8F8F8;
         margin-top:-8px;
+        left:360px;
     }
     h1{
 
@@ -2371,6 +2372,23 @@ section .text-for-767px{
     .bordered-menu-element1{
         position: relative;
         left:30px;
+    }
+    .navigation-menu{
+        position: absolute;
+        display: inline;
+        left:6px;
+        width:320px;
+    }
+    .navigation__close-button{
+        display: none;
+    }
+    .navigation__logo-button{
+        left:20px;
+    }
+    .navigation-body-container__decoration{
+        position:relative;
+        left:5px;
+        top:142px;
     }
 
 }

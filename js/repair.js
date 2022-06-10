@@ -71,4 +71,5 @@ document.querySelectorAll(".accordion-repair").forEach((el)=>{
 
         }
     })
+
 })

@@ -10,6 +10,8 @@ let blur = document.querySelector(".line");
 let callBackClose = document.querySelector(".close-button__call-back");
 let telephone = document.querySelector(".telephone-button");
 let message = document.querySelector(".message-button");
+let pageWidth = window.innerWidth;
+
 
 popUpToggle.onclick = function (){
 
@@ -21,6 +23,7 @@ popUpToggle.onclick = function (){
 };
 
 popUpClose.onclick = function (){
+
     popUp.style.display="none";
     popUp.style.width="0px";//закрыть главное меню
     popUp.style.height="0px";

@@ -21,6 +21,7 @@ document.querySelectorAll(".accordion").forEach((el)=>{
         let hiddentext = document.querySelector(".text-in");
         let pageWidth = window.innerWidth;
         let textOut = document.querySelector(".text-out");
+        let priceSection = document.querySelector(".prices");
         if(content.style.maxHeight){
             document.querySelectorAll('.content').forEach((el)=>el.style.maxHeight = null)
 
@@ -36,6 +37,7 @@ document.querySelectorAll(".accordion").forEach((el)=>{
             textOut.style.top = "9px";
             textOut.style.left = "30px";
             textOut.style.display = "inline";
+            priceSection.style.top="1165px";
         }
         else{
             document.querySelectorAll('.content').forEach((el)=>el.style.maxHeight = null)
@@ -71,6 +73,7 @@ document.querySelectorAll(".accordion").forEach((el)=>{
                 textOut.style.top = "25px";
                 textOut.style.display = "none";
                 hiddentext.style.display="inline";
+                priceSection.style.top="1311px";
             }
 
         }
