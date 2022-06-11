@@ -37,7 +37,7 @@ document.querySelectorAll(".accordion").forEach((el)=>{
             textOut.style.top = "9px";
             textOut.style.left = "30px";
             textOut.style.display = "inline";
-            priceSection.style.top="1165px";
+            priceSection.style.top="1185px";
         }
         else{
             document.querySelectorAll('.content').forEach((el)=>el.style.maxHeight = null)
@@ -60,6 +60,7 @@ document.querySelectorAll(".accordion").forEach((el)=>{
                 hiddenBrandsEleven.style.height="68px";
                 textOut.style.display = "none";
                 hiddentext.style.display="inline";
+                priceSection.style.top="1362px";
             }
             else{
                 brands.style.height = "470px";
@@ -73,7 +74,7 @@ document.querySelectorAll(".accordion").forEach((el)=>{
                 textOut.style.top = "25px";
                 textOut.style.display = "none";
                 hiddentext.style.display="inline";
-                priceSection.style.top="1311px";
+                priceSection.style.top="1195px";
             }
 
         }

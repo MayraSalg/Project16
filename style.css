@@ -2164,7 +2164,7 @@ section .text-for-767px{
         height :535px;
         background-color:#F8F8F8;
         margin-top:-8px;
-        left:360px;
+        left:340px;
     }
     h1{
 
@@ -2389,6 +2389,23 @@ section .text-for-767px{
         position:relative;
         left:5px;
         top:142px;
+    }
+    .menu-list .menu-list__first-element {
+        color: black;
+        font-family: "TTLakes-Regular", sans-serif;
+    }
+    .menu-list .menu-list__second-element {
+        color: grey;
+        font-family: "TTLakes-Regular", sans-serif;
+    }
+    .repair-types{
+        top:532px;
+    }
+    .prices{
+        top:1184px;
+    }
+    .footer-container {
+        top: 1248px;
     }
 
 }

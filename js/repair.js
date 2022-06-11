@@ -44,9 +44,8 @@ document.querySelectorAll(".accordion-repair").forEach((el)=>{
             document.querySelectorAll('.contentAccordion').forEach((el)=>el.style.maxHeight = null)
             contentAccordion.style.maxHeight = contentAccordion.scrollHeight + 'px'
 
-            if (pageWidth >=1120){
-            }
-            else{
+
+
                 repairTypes.style.height = "870px";
                 brandsRepairTypes.style.height="310px";
                 priceSection.style.top="1705px";
@@ -67,7 +66,7 @@ document.querySelectorAll(".accordion-repair").forEach((el)=>{
                 textOut.style.top = "25px";
                 textOut.style.display = "none";
                 hiddentext.style.display="inline";
-            }
+
 
         }
     })
