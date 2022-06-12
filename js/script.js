@@ -37,7 +37,7 @@ document.querySelectorAll(".accordion").forEach((el)=>{
             textOut.style.top = "9px";
             textOut.style.left = "30px";
             textOut.style.display = "inline";
-            priceSection.style.top="1185px";
+            priceSection.style.top="1240px";
         }
         else{
             document.querySelectorAll('.content').forEach((el)=>el.style.maxHeight = null)

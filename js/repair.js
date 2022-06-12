@@ -17,8 +17,33 @@ document.querySelectorAll(".accordion-repair").forEach((el)=>{
         let priceSection = document.querySelector(".prices");
 
         if(contentAccordion.style.maxHeight){
+            if (pageWidth >=1120){
+                priceSection.style.top = "1230px";
+                repairTypes.style.height = "394px";
+                brandsRepairTypes.style.height="208px";
+                hiddenBrands.style.display="flex";
+                hiddenBrands.style.height="160px";
+                hiddenBrandsRepFive.style.display="none";
+                hiddenBrandsRepFive.style.height="0";
+                hiddenBrandsRepSix.style.display="none";
+                hiddenBrandsRepSix.style.height="0";
+                hiddenBrandsRepSeven.style.display="none";
+                hiddenBrandsRepSeven.style.height="0";
+                hiddenBrandsRepEight.style.display="none";
+                hiddenBrandsRepEight.style.height="0";
+                hiddenBrandsRepNine.style.display="none";
+                hiddenBrandsRepNine.style.height="0";
+                hiddenBrandsRepTen.style.display="none";
+                hiddenBrandsRepTen.style.height="0";
+                hiddentext.style.display="none";
+                textOut.style.top = "220px";
+                textOut.style.left = "-940px";
+                textOut.style.display = "inline";
+            }
+            else{
             document.querySelectorAll('.contentAccordion').forEach((el)=>el.style.maxHeight = null)
             repairTypes.style.height = "334px";
+                priceSection.style.top = "1155px";
             brandsRepairTypes.style.height="208px";
             hiddenBrands.style.display="none";
             hiddenBrands.style.height="0";
@@ -37,37 +62,59 @@ document.querySelectorAll(".accordion-repair").forEach((el)=>{
             hiddentext.style.display="none";
             textOut.style.top = "15px";
             textOut.style.left = "30px";
-            textOut.style.display = "inline";
-            priceSection.style.top="1165px";
+            textOut.style.display = "inline";}
+
         }
         else{
             document.querySelectorAll('.contentAccordion').forEach((el)=>el.style.maxHeight = null)
             contentAccordion.style.maxHeight = contentAccordion.scrollHeight + 'px'
 
-
-
-                repairTypes.style.height = "870px";
-                brandsRepairTypes.style.height="310px";
-                priceSection.style.top="1705px";
-                hiddenBrands.style.display="flex";
-                hiddenBrands.style.height="160px";
-                hiddenBrandsRepFive.style.display="flex";
-                hiddenBrandsRepFive.style.height="160px";
-                hiddenBrandsRepSix.style.display="flex";
-                hiddenBrandsRepSix.style.height="160px";
-                hiddenBrandsRepSeven.style.display="flex";
-                hiddenBrandsRepSeven.style.height="160px";
-                hiddenBrandsRepEight.style.display="flex";
-                hiddenBrandsRepEight.style.height="160px";
-                hiddenBrandsRepNine.style.display="flex";
-                hiddenBrandsRepNine.style.height="160px";
-                hiddenBrandsRepTen.style.display="flex";
-                hiddenBrandsRepTen.style.height="160px";
+            if (pageWidth >=1120){
+                repairTypes.style.height="770px";
+                brandsRepairTypes.style.height = "304px";
+                priceSection.style.top = "1625px";
+                hiddenBrands.style.display = "flex";
+                hiddenBrands.style.height = "160px";
+                hiddenBrandsRepFive.style.display = "flex";
+                hiddenBrandsRepFive.style.height = "160px";
+                hiddenBrandsRepSix.style.display = "flex";
+                hiddenBrandsRepSix.style.height = "160px";
+                hiddenBrandsRepSeven.style.display = "flex";
+                hiddenBrandsRepSeven.style.height = "160px";
+                hiddenBrandsRepEight.style.display = "flex";
+                hiddenBrandsRepEight.style.height = "160px";
+                hiddenBrandsRepNine.style.display = "flex";
+                hiddenBrandsRepNine.style.height = "160px";
+                hiddenBrandsRepTen.style.display = "flex";
+                hiddenBrandsRepTen.style.height = "160px";
                 textOut.style.top = "25px";
                 textOut.style.display = "none";
-                hiddentext.style.display="inline";
+                hiddentext.style.display = "inline";
+            }
 
+            else {
+                repairTypes.style.height = "870px";
+                brandsRepairTypes.style.height = "310px";
+                priceSection.style.top = "1700px";
+                hiddenBrands.style.display = "flex";
+                hiddenBrands.style.height = "160px";
+                hiddenBrandsRepFive.style.display = "flex";
+                hiddenBrandsRepFive.style.height = "160px";
+                hiddenBrandsRepSix.style.display = "flex";
+                hiddenBrandsRepSix.style.height = "160px";
+                hiddenBrandsRepSeven.style.display = "flex";
+                hiddenBrandsRepSeven.style.height = "160px";
+                hiddenBrandsRepEight.style.display = "flex";
+                hiddenBrandsRepEight.style.height = "160px";
+                hiddenBrandsRepNine.style.display = "flex";
+                hiddenBrandsRepNine.style.height = "160px";
+                hiddenBrandsRepTen.style.display = "flex";
+                hiddenBrandsRepTen.style.height = "160px";
+                textOut.style.top = "25px";
+                textOut.style.display = "none";
+                hiddentext.style.display = "inline";
 
+            }
         }
     })
 

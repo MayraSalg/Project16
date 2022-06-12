@@ -1709,6 +1709,7 @@ section .text-for-767px{
         border-radius: 6px;
         position: static;
         top: 16px;
+        height:160px;
     }
     .section-description__prices{
         position: relative;
@@ -2400,12 +2401,30 @@ section .text-for-767px{
     }
     .repair-types{
         top:532px;
+        height:394px;
     }
     .prices{
-        top:1184px;
+        top:1250px;
     }
     .footer-container {
         top: 1248px;
+    }
+    .brands-repair-types{
+        width:1100px;
+    }
+    .text-out-repair{
+        top:220px;
+        left:-940px;
+    }
+    .text-in-repair{
+        top:245px;
+        left:-450px;
+    }
+    .brands__item-repair:nth-child(4){
+       display: flex;
+        height:160px;
+        top:0;
+
     }
 
 }
