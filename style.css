@@ -1779,7 +1779,10 @@ section .text-for-767px{
         right: 264px;
     }
 
-
+    .close-button-img{
+        position: relative;
+        left:0px;
+    }
 
     .repair-button {
         display: flex;
@@ -2425,6 +2428,58 @@ section .text-for-767px{
         height:160px;
         top:0;
 
+    }
+    .brands__prices-table{
+        width:1020px;
+        left:36px;
+    }
+    .brands__prices-repair{
+        width:1025px;
+    }
+    .brands__prices-table__hat p:nth-child(2){
+        left:540px;
+    }
+    .brands__prices-table__hat p:nth-child(3){
+        left:660px;
+    }
+    .navigation__info {
+        top: 998px;
+    }
+    .navigation__contacts h1{
+        left:-35px;
+    }
+    .reply{
+        top:-60px;
+        left: 70%;
+        width:440px;
+        height:940px;
+    }
+    .close-button a{
+        top:98px;
+        left:-76px;
+    }
+    .reply-body__form{
+        width:376px;
+    }
+    .reply-footer p{
+        width:376px;
+    }
+    .submit-img{
+        left:250px;
+    }
+    .call-back {
+        position: relative;
+        top: -702px;
+        left: 72%;
+        width: 440px;
+        height: 940px;
+    }
+    .close-button-img{
+        position: relative;
+        left:-10px;
+    }
+    .reply-footer__call-back p{
+        width:376px;
     }
 
 }

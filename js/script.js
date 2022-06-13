@@ -37,7 +37,7 @@ document.querySelectorAll(".accordion").forEach((el)=>{
             textOut.style.top = "9px";
             textOut.style.left = "30px";
             textOut.style.display = "inline";
-            priceSection.style.top="1240px";
+            priceSection.style.top="1175px";
         }
         else{
             document.querySelectorAll('.content').forEach((el)=>el.style.maxHeight = null)
@@ -74,7 +74,7 @@ document.querySelectorAll(".accordion").forEach((el)=>{
                 textOut.style.top = "25px";
                 textOut.style.display = "none";
                 hiddentext.style.display="inline";
-                priceSection.style.top="1195px";
+                priceSection.style.top="1312px";
             }
 
         }

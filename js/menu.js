@@ -20,6 +20,7 @@ popUpToggle.onclick = function (){
     popUp.style.height="1524px";
     blur.style.display="inline";
 
+
 };
 
 popUpClose.onclick = function (){
@@ -29,6 +30,7 @@ popUpClose.onclick = function (){
     popUp.style.height="0px";
     blur.style.display="none";
 
+
 }
 window.onclick = function (event){
     if (event.target == popUp){
@@ -36,14 +38,27 @@ window.onclick = function (event){
     }
 }
 replyOpen.onclick = function (){
-    reply.style.display="inline";
-    reply.style.position="absolute";
-    popUp.style.display="none";       //открыть reply
-    popUp.style.width="0px";
-    popUp.style.height="0px";
-    callBackText.textContent="Обратная связь";
-    callBackFooter.style.top="0px";
 
+    if (pageWidth >=1120){
+        reply.style.display="inline";
+        reply.style.position="absolute";
+        popUp.style.display="block";
+        popUp.style.width="320px";//закрыть главное меню
+        popUp.style.height="1024px";
+        popUp.style.boxShadow="none";
+        callBackText.textContent="Обратная связь";
+        callBackFooter.style.top="0px";
+    }
+else{
+        reply.style.display="inline";
+        reply.style.position="absolute";
+        popUp.style.display="none";       //открыть reply
+        popUp.style.width="0px";
+        popUp.style.height="0px";
+        callBackText.textContent="Обратная связь";
+        callBackFooter.style.top="0px";
+
+    }
 
 }
 replyClose.onclick = function (){
@@ -52,13 +67,22 @@ replyClose.onclick = function (){
     callBack.style.display="none";//закрыть reply
 }
 callBackOpen.onclick = function (){
+    if (pageWidth >=1120){
+        popUp.style.display="block";
+        popUp.style.width="320px";           //открыть обратный звонок
+        popUp.style.height="1024px";
+        popUp.style.boxShadow="none";
+        callBack.style.display="inline-block";
+        callBackFooter.style.top="-270px";
+        callBack.style.position="absolute";
+    }
+    else{
     callBack.style.display="inline-block";
-    //открыть обратный звонок
     popUp.style.display="none";
     popUp.style.width="0px";
     popUp.style.height="0px";
     callBackFooter.style.top="-270px";
-    callBack.style.position="absolute";
+    callBack.style.position="absolute";}
 }
 callBackClose.onclick = function (){
     callBack.style.display="none";
