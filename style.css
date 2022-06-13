@@ -2481,5 +2481,9 @@ section .text-for-767px{
     .reply-footer__call-back p{
         width:376px;
     }
+    .close-button__call-back{
+        position: relative;
+        left:-70px;
+    }
 
 }
