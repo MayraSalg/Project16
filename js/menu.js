@@ -11,7 +11,7 @@ let callBackClose = document.querySelector(".close-button__call-back");
 let telephone = document.querySelector(".telephone-button");
 let message = document.querySelector(".message-button");
 let pageWidth = window.innerWidth;
-
+let blur1120=document.getElementById("blur-1120");
 
 popUpToggle.onclick = function (){
 
@@ -19,7 +19,6 @@ popUpToggle.onclick = function (){
     popUp.style.width="320px"; //открыть главное меню
     popUp.style.height="1524px";
     blur.style.display="inline";
-
 
 };
 
@@ -30,24 +29,29 @@ popUpClose.onclick = function (){
     popUp.style.height="0px";
     blur.style.display="none";
 
+}
+blur.onclick = function (){
+    popUp.style.display="none";
+    popUp.style.width="0px";//закрыть главное меню
+    popUp.style.height="0px";
+    blur.style.display="none";
+    reply.style.display="none";
+    callBack.style.display="none";
+}
 
-}
-window.onclick = function (event){
-    if (event.target == popUp){
-        popUp.style.display="none";
-    }
-}
 replyOpen.onclick = function (){
 
     if (pageWidth >=1120){
         reply.style.display="inline";
         reply.style.position="absolute";
         popUp.style.display="block";
-        popUp.style.width="320px";//закрыть главное меню
+        popUp.style.width="320px";
         popUp.style.height="1024px";
         popUp.style.boxShadow="none";
         callBackText.textContent="Обратная связь";
         callBackFooter.style.top="0px";
+        blur1120.style.display="inline"
+
     }
 else{
         reply.style.display="inline";
@@ -57,6 +61,7 @@ else{
         popUp.style.height="0px";
         callBackText.textContent="Обратная связь";
         callBackFooter.style.top="0px";
+        blur1120.style.display="none"
 
     }
 
@@ -107,4 +112,5 @@ message.onclick= function (){
     popUp.style.height="0px";
     callBackText.textContent="Обратная связь";
     callBackFooter.style.top="0px";
+    blur.style.display="inline";
 }
