@@ -39,10 +39,18 @@ popUpClose.onclick = function (){
 
 
 }
-window.onclick = function (event){
-    if (event.target == popUp){
-        popUp.style.display="none";
+blur.onclick = function (){
+    if (pageWidth >=1120){
+        callBack.style.display="none";
+        reply.style.display="none";
+        popUp.style.display="inline";
+        blur.style.display="none";
     }
+    else{
+        callBack.style.display="none";
+        reply.style.display="none";
+        popUp.style.display="none";
+        blur.style.display="none";}
 }
 
 
@@ -54,10 +62,10 @@ replyOpen.onclick = function (){
         popUp.style.height="1024px";
         popUp.style.boxShadow="none";
         popUp.style.zIndex="1";
-        callBack.style.display="inline-block";
+        reply.style.display="inline-block";
         blur.style.display="inline";
         blur.style.marginLeft="-550px";
-        callBack.style.position="absolute";
+        reply.style.position="absolute";
     }
     else{
        reply.style.display="inline";

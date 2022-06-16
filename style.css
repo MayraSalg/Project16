@@ -1480,7 +1480,7 @@ section .text-for-767px{
     }
     .prices{
         top:1165px;
-        height:720px;
+        height:820px;
     }
     .brands__list {
         display: flex;
@@ -2387,7 +2387,7 @@ section .text-for-767px{
         display: inline;
         left:6px;
         width:320px;
-        z-index: 5;
+        z-index: 1;
     }
     .navigation__close-button{
         display: none;
@@ -2510,6 +2510,7 @@ section .text-for-767px{
     position: absolute;
     width: 3000px;
     height:3000px;
+    z-index: 7;
 }
 
 
