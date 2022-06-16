@@ -14,11 +14,18 @@ let pageWidth = window.innerWidth;
 
 
 popUpToggle.onclick = function (){
-
+    if (pageWidth >=1120){
+        popUp.style.display="block";
+        popUp.style.width="320px";//закрыть главное меню
+        popUp.style.height="1024px";
+        popUp.style.boxShadow="none";
+        blur.style.display="inline";
+    }
+    else{
     popUp.style.display="flex";
     popUp.style.width="320px"; //открыть главное меню
     popUp.style.height="1524px";
-    blur.style.display="inline";
+    blur.style.display="inline";}
 
 
 };
@@ -37,30 +44,31 @@ window.onclick = function (event){
         popUp.style.display="none";
     }
 }
-replyOpen.onclick = function (){
 
+
+
+replyOpen.onclick = function (){
     if (pageWidth >=1120){
-        reply.style.display="inline";
-        reply.style.position="absolute";
         popUp.style.display="block";
-        popUp.style.width="320px";//закрыть главное меню
+        popUp.style.width="320px";           //открыть обратный звонок
         popUp.style.height="1024px";
         popUp.style.boxShadow="none";
-        callBackText.textContent="Обратная связь";
-        callBackFooter.style.top="0px";
+        popUp.style.zIndex="1";
+        callBack.style.display="inline-block";
+        blur.style.display="inline";
+        blur.style.marginLeft="-550px";
+        callBack.style.position="absolute";
     }
-else{
-        reply.style.display="inline";
-        reply.style.position="absolute";
-        popUp.style.display="none";       //открыть reply
-        popUp.style.width="0px";
+    else{
+       reply.style.display="inline";
+       reply.style.position="absolute";
+       popUp.style.display="none";       //открыть reply
+       popUp.style.width="0px";
         popUp.style.height="0px";
-        callBackText.textContent="Обратная связь";
-        callBackFooter.style.top="0px";
+         blur.style.display="inline";}
 
-    }
 
-}
+ }
 replyClose.onclick = function (){
     reply.style.display="none";
     blur.style.display="none";
@@ -73,7 +81,7 @@ callBackOpen.onclick = function (){
         popUp.style.height="1024px";
         popUp.style.boxShadow="none";
         callBack.style.display="inline-block";
-        callBackFooter.style.top="-270px";
+        blur.style.display="inline";
         callBack.style.position="absolute";
     }
     else{
@@ -81,7 +89,7 @@ callBackOpen.onclick = function (){
     popUp.style.display="none";
     popUp.style.width="0px";
     popUp.style.height="0px";
-    callBackFooter.style.top="-270px";
+
     callBack.style.position="absolute";}
 }
 callBackClose.onclick = function (){
@@ -92,19 +100,12 @@ callBackClose.onclick = function (){
 telephone.onclick= function (){
     callBack.style.display="inline-block";
     //открыть обратный звонок
-    popUp.style.display="none";
-    popUp.style.width="0px";
-    popUp.style.height="0px";
-    callBackFooter.style.top="-270px";
     callBack.style.position="absolute";
     blur.style.display="inline";
+
 }
 message.onclick= function (){
     reply.style.display="inline";
     reply.style.position="absolute";
-    popUp.style.display="none";       //открыть reply
-    popUp.style.width="0px";
-    popUp.style.height="0px";
-    callBackText.textContent="Обратная связь";
-    callBackFooter.style.top="0px";
+    blur.style.display="inline";
 }

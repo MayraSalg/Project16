@@ -24,7 +24,7 @@ document.querySelectorAll(".accordion").forEach((el)=>{
         let priceSection = document.querySelector(".prices");
         if(content.style.maxHeight){
             document.querySelectorAll('.content').forEach((el)=>el.style.maxHeight = null)
-
+            if (pageWidth >=1120){
             brands.style.height = "334px";
             brandsRepair.style.height="208px";
             hiddenBrands.style.display="none";
@@ -37,7 +37,22 @@ document.querySelectorAll(".accordion").forEach((el)=>{
             textOut.style.top = "9px";
             textOut.style.left = "30px";
             textOut.style.display = "inline";
-            priceSection.style.top="1175px";
+            priceSection.style.top="1220px";}
+            else{
+                brands.style.height = "334px";
+                brandsRepair.style.height="208px";
+                hiddenBrands.style.display="none";
+                hiddenBrands.style.height="0";
+                hiddenBrandsEight.style.display="none";
+                hiddenBrandsEight.style.height="0";
+                hiddenBrandsNine.style.display="none";
+                hiddenBrandsNine.style.height="0";
+                hiddentext.style.display="none";
+                textOut.style.top = "9px";
+                textOut.style.left = "30px";
+                textOut.style.display = "inline";
+                priceSection.style.top="1175px";
+            }
         }
         else{
             document.querySelectorAll('.content').forEach((el)=>el.style.maxHeight = null)

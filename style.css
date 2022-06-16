@@ -596,6 +596,9 @@ section .text-for-767px{
         top:9px;
 
     }
+    .navigation-menu__open{
+        display:inline;
+    }
 
     .navigation__close-button{
         display:flex;
@@ -849,7 +852,7 @@ section .text-for-767px{
         background-color: white;
         z-index: 7;
         position: relative;
-        top:-509px;
+        top:-87px;
     }
 
     .close-button a{
@@ -1367,11 +1370,12 @@ section .text-for-767px{
 
     .line {
         display: none;
-        background-color: rgba(195,189,185,0.9);
+        background-color: white;
+        opacity: 0.9;
         width: 100%;
         height:2035px;
         position: absolute;
-        top: -90px;
+        top: -150px;
         z-index: 5;
     }
 
@@ -1797,7 +1801,7 @@ section .text-for-767px{
     }
     .call-back{
         position: relative;
-        top:-742px;
+        top:-87px;
     }
 
     .search-button {
@@ -1919,11 +1923,12 @@ section .text-for-767px{
 
     .line {
         display: none;
-        background-color: rgba(195,189,185,0.9);
-        width: 100%;
+        background-color: white;
+        opacity: 0.9;
+        width: 3000px;
         height:2035px;
         position: absolute;
-        top: -90px;
+        top: -150px;
         z-index: 5;
     }
 
@@ -2382,6 +2387,7 @@ section .text-for-767px{
         display: inline;
         left:6px;
         width:320px;
+        z-index: 5;
     }
     .navigation__close-button{
         display: none;
@@ -2469,7 +2475,7 @@ section .text-for-767px{
     }
     .call-back {
         position: relative;
-        top: -702px;
+        top: -70px;
         left: 72%;
         width: 440px;
         height: 940px;
@@ -2484,6 +2490,27 @@ section .text-for-767px{
     .close-button__call-back{
         position: relative;
         left:-70px;
+        top: 74px;
     }
+
+    .footer-container {
+        top: 1218px;
+        left: 330px;
+        height: 180px;
+    }
+    .footer-container p:nth-child(3){
+        width:330px;
+        left:750px;
+    }
+    .footer-container p:nth-child(2){
+        left:380px;
+    }
+.line{
+    display: none;
+    position: absolute;
+    width: 3000px;
+    height:3000px;
+}
+
 
 }
