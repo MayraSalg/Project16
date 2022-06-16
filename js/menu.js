@@ -16,6 +16,7 @@ let pageWidth = window.innerWidth;
 popUpToggle.onclick = function (){
     if (pageWidth >=1120){
         popUp.style.display="block";
+        popUp.style.position="fixed";
         popUp.style.width="320px";//закрыть главное меню
         popUp.style.height="1024px";
         popUp.style.boxShadow="none";
@@ -23,6 +24,7 @@ popUpToggle.onclick = function (){
     }
     else{
     popUp.style.display="flex";
+    popUp.style.position="fixed";
     popUp.style.width="320px"; //открыть главное меню
     popUp.style.height="1524px";
     blur.style.display="inline";}
