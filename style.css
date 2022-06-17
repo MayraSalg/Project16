@@ -839,7 +839,7 @@ section .text-for-767px{
     .reply{
         display: none;
         width:320px;
-        height:680px;
+        height:100%;
         background-color: white;
         z-index: 7;
         position: relative;
@@ -848,7 +848,7 @@ section .text-for-767px{
     .call-back{
         display: none;
         width:320px;
-        height:680px;
+        height:100%;
         background-color: white;
         z-index: 7;
         position: relative;
@@ -1802,6 +1802,7 @@ section .text-for-767px{
     .call-back{
         position: relative;
         top:-87px;
+        height:100%;
     }
 
     .search-button {
@@ -1929,21 +1930,22 @@ section .text-for-767px{
         height:2035px;
         position: absolute;
         top: -150px;
-        z-index: 5;
+        z-index: 1;
     }
 
 
 
     .menu ul{
         display: flex;
-        width:100%;
+        width:720px;
         height:104px;
         margin-top: 0;
-
-        flex-wrap: nowrap;
+        top:-20px;
+        position: relative;
+        flex-wrap: wrap;
         white-space: nowrap;
         overflow: visible;
-        white-space: nowrap;
+
     }
     .bordered-menu-element{
         display: flex;
@@ -1957,11 +1959,12 @@ section .text-for-767px{
         padding-right: 15px;
 
     }
-    ul li{
+    .menu-main__list li{
         display: flex;
         list-style: none;
         width:223px;
         margin-left:-5px;
+        margin-bottom: -60px;
     }
     li a{
         width:221px;
@@ -1990,7 +1993,7 @@ section .text-for-767px{
         font-weight: 400;
         font-size: 14px;
         color: #1B1C21;
-        top: 152px;
+        top: 170px;
         left: 16px;
     }
 
@@ -2033,8 +2036,12 @@ section .text-for-767px{
         width: 100%;
         height: 80%;
         left: 384px;
-        top: -30px;
+        top: -20px;
         background-repeat: no-repeat;
+    }
+    .bordered-menu-element1:nth-child(4) a{
+        position: relative;
+        left:-15px;
     }
 
     .CPS-img {
@@ -2070,7 +2077,7 @@ section .text-for-767px{
         background-image: url(img/strelochki.svg);
     }
     .navigation__info{
-        top:1304px;
+        top:800px;
     }
     .navigation-links {
         left:40px;
@@ -2511,6 +2518,7 @@ section .text-for-767px{
     width: 3000px;
     height:3000px;
     z-index: 7;
+    left:-500px;
 }
 
 

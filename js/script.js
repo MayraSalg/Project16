@@ -95,3 +95,5 @@ document.querySelectorAll(".accordion").forEach((el)=>{
         }
     })
 })
+
+
