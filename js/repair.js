@@ -36,8 +36,8 @@ document.querySelectorAll(".accordion-repair").forEach((el)=>{
                 hiddenBrandsRepTen.style.display="none";
                 hiddenBrandsRepTen.style.height="0";
                 hiddentext.style.display="none";
-                textOut.style.top = "220px";
-                textOut.style.left = "-940px";
+                textOut.style.top = "25px";
+                textOut.style.left = "25px";
                 textOut.style.display = "inline";
             }
             else{
@@ -70,9 +70,9 @@ document.querySelectorAll(".accordion-repair").forEach((el)=>{
             contentAccordion.style.maxHeight = contentAccordion.scrollHeight + 'px'
 
             if (pageWidth >=1120){
-                repairTypes.style.height="770px";
+                repairTypes.style.height="870px";
                 brandsRepairTypes.style.height = "304px";
-                priceSection.style.top = "1625px";
+                priceSection.style.top = "1700px";
                 hiddenBrands.style.display = "flex";
                 hiddenBrands.style.height = "160px";
                 hiddenBrandsRepFive.style.display = "flex";
