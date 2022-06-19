@@ -1928,7 +1928,7 @@ section .text-for-767px{
         background-color: white;
         opacity: 0.9;
         width: 3000px;
-        height:2035px;
+        height:2095px;
         position: absolute;
         top: -150px;
         z-index: 1;
@@ -2430,16 +2430,16 @@ section .text-for-767px{
         width:1100px;
     }
     .text-out-repair{
-        top:220px;
-        left:-940px;
+        top:220px ;
+        left:-940px ;
     }
     .text-in-repair{
         top:245px;
         left:-450px;
     }
     .brands__item-repair:nth-child(4){
-       display: flex ;
-        height:160px;
+       display: flex !important;
+        height:160px !important;
         top:0;
 
     }

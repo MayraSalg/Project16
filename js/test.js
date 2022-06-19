@@ -19,12 +19,23 @@ popUpToggle.onclick = function (){
         popUp.style.position="fixed";
         popUp.style.width="320px"; //открыть главное меню
         popUp.style.height="1524px";
+    blur.style.display="inline";
 
 };
 if(pageWidth >= 1120){
     popUp.style.display = "flex";
     popUp.style.width = "320px";//закрыть главное меню
     popUp.style.height = "1540px";
+    popUp.style.position = "fixed";
+
+}
+
+blur.onclick = function (){
+    popUp.style.display = "none";
+    blur.style.display="none";
+    callBack.style.display="none";
+    reply.style.display="none";
+
 }
 
 popUpClose.onclick = function () {
@@ -32,6 +43,7 @@ popUpClose.onclick = function () {
         popUp.style.display = "none";
         popUp.style.width = "0px";//закрыть главное меню
         popUp.style.height = "0px";
+    blur.style.display="none";
 
 }
 
@@ -43,6 +55,7 @@ replyOpen.onclick = function (){
         popUp.style.display="none";       //открыть reply
         popUp.style.width="0px";
         popUp.style.height="0px";
+    blur.style.display="inline";
 
 
 }
@@ -50,6 +63,7 @@ replyClose.onclick = function (){
     reply.style.display="none";
     blur.style.display="none";
     callBack.style.display="none";//закрыть reply
+    blur.style.display="none";
 }
 
 
@@ -61,23 +75,24 @@ callBackOpen.onclick = function (){
         popUp.style.width="0px";
         popUp.style.height="0px";
     callBack.style.height="100%";
+    blur.style.display="inline";
 
 }
 callBackClose.onclick = function (){
     callBack.style.display="none";
-
+    blur.style.display="none";
 
 }
 telephone.onclick= function (){
     callBack.style.display="inline-block";
     //открыть обратный звонок
     callBack.style.position="fixed";
-
+    blur.style.display="inline";
     callBack.style.height="100%";
 }
 message.onclick= function (){
     reply.style.display="inline";
     reply.style.position="fixed";
-
+    blur.style.display="inline";
     reply.style.height="100%";
 }
