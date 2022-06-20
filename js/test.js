@@ -7,7 +7,7 @@ let reply = document.querySelector(".reply");
 let callBackOpen = document.querySelector(".action-buttons__tel");
 let callBack = document.querySelector(".call-back");
 let blur = document.querySelector(".line");
-let callBackClose = document.querySelector(".close-button__call-back");
+let callBackClose = document.querySelector(".close-button-img__callback");
 let telephone = document.querySelector(".telephone-button");
 let message = document.querySelector(".message-button");
 let pageWidth =  window.matchMedia("screen and (min-width: 1120px)");
@@ -17,7 +17,7 @@ popUpToggle.onclick = function (){
 
         popUp.style.display="flex";
         popUp.style.position="fixed";
-        popUp.style.width="320px"; //открыть главное меню
+        popUp.style.width="100%"; //открыть главное меню
         popUp.style.height="100%";
     blur.style.display="inline";
 
@@ -51,6 +51,7 @@ popUpClose.onclick = function () {
 
 replyOpen.onclick = function (){
     reply.style.height="100%";
+
         reply.style.display="inline";
         reply.style.position="fixed";
         popUp.style.display="none";       //открыть reply

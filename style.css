@@ -838,7 +838,7 @@ section .text-for-767px{
     /* Меню реплай */
     .reply{
         display: none;
-        width:320px;
+        width:100%;
         height:100%;
         background-color: white;
         z-index: 7;
@@ -847,7 +847,7 @@ section .text-for-767px{
     }
     .call-back{
         display: none;
-        width:320px;
+        width:100%;
         height:100%;
         background-color: white;
         z-index: 7;
@@ -863,6 +863,16 @@ section .text-for-767px{
         display: inline-block;
         top: 24px;
     }
+    .close-button-img__callback{
+        top:20px;
+        left:15px;
+        position: relative;
+    }
+    .close-button-img{
+        top:20px;
+        left:15px;
+        position: relative;
+    }
     .close-button__call-back a{
         position: relative;
         width: 40px;
@@ -871,15 +881,20 @@ section .text-for-767px{
         display: inline-block;
         top: 24px;
     }
+    .close-button__call-back{
+        height:80px;
+        width:50px;
+        position: relative;
+    }
    .highlight-img{
        position: relative;
-       top: 86px;
+       top: 40px;
        right: 30px;
    }
    .highlight-line{
        position: relative;
        left:30px;
-       top:-30px;
+       top:0px;
    }
 
    .highlight-line p{
@@ -887,7 +902,7 @@ section .text-for-767px{
        font-family:"TTLakes-Bold",sans-serif;
        font-weight: 500;
        font-size: 24px;
-       top:24px;
+       top:-24px;
        right:13px;
        width:288px;
        z-index: 7;
@@ -1321,7 +1336,7 @@ section .text-for-767px{
     .CPS-img {
         position: relative;
         bottom: 35px;
-        background-image: url("img/CPS.png");
+
         background-size:511px 307px;
         top:200px;
         width: 100%;
