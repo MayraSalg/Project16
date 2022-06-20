@@ -2559,3 +2559,22 @@ section .text-for-767px{
 }
 
 }
+@media(min-width:1200px){
+    .footer-container{
+        max-width:1000px;
+    }
+    section{
+        max-width: 76%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
