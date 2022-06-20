@@ -18,7 +18,7 @@ popUpToggle.onclick = function (){
         popUp.style.display="flex";
         popUp.style.position="fixed";
         popUp.style.width="320px"; //открыть главное меню
-        popUp.style.height="1524px";
+        popUp.style.height="100%";
     blur.style.display="inline";
 
 };
@@ -27,6 +27,7 @@ if(pageWidth >= 1120){
     popUp.style.width = "320px";//закрыть главное меню
     popUp.style.height = "1540px";
     popUp.style.position = "fixed";
+    popUp.style.boxShadow = "none";
 
 }
 
