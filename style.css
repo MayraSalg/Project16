@@ -1436,7 +1436,7 @@ section .text-for-767px{
     .brands {
         position: relative;
         display: flex;
-        width: 100%;
+        width: 150%;
         height: 322px;
         border-top: 1px solid #D9FFF5;
         overflow: hidden;
@@ -1481,6 +1481,7 @@ section .text-for-767px{
     .prices{
         top:1165px;
         height:820px;
+        width:149%;
     }
     .brands__list {
         display: flex;
@@ -1589,7 +1590,7 @@ section .text-for-767px{
     .repair-types {
         position: relative;
         display: flex;
-        width: 100%;
+        width: 150%;
         height: 430px;
         border-top: 1px solid #D9FFF5;
         overflow: hidden;
@@ -1603,9 +1604,13 @@ section .text-for-767px{
         position: relative;
         height:150px;
         top:1227px;
+        width:152%;
     }
     .footer-container p{
 
+    }
+    .reply{
+        left:70%;
     }
     .footer-container p:nth-child(1){
         position: relative;
@@ -1670,7 +1675,7 @@ section .text-for-767px{
         width:720px;
         top:120px;
         left:20px;
-        height:395px;
+        height:375px;
         border-radius: 6px;
         display:inline;
     }
@@ -1698,6 +1703,9 @@ section .text-for-767px{
     }
     tr:last-child td{
         border-bottom:0px;
+    }
+    tr:first-child td{
+        top:10px;
     }
 
     .brands__item-repair {
@@ -1736,7 +1744,7 @@ section .text-for-767px{
     header {
         background-color: white;
         height: 88px;
-        width: 100%;
+        width: 150%;
         position: absolute;
 
     }
@@ -1804,6 +1812,7 @@ section .text-for-767px{
         position: relative;
         top:-87px;
         height:100%;
+        left:70%;
     }
 
     .search-button {
@@ -1916,7 +1925,7 @@ section .text-for-767px{
         position: absolute;
         margin-top: 88px;
         display: flex;
-        width: 100%;
+        width: 150%;
         height: 416px;
         background-color: #F8F8F8;
 
@@ -1927,18 +1936,21 @@ section .text-for-767px{
         display: none;
         background-color: white;
         opacity: 0.9;
-        width: 3000px;
+        width: 100%;
         height:2095px;
         position: absolute;
         top: -150px;
-        z-index: 1;
+        z-index: 2;
     }
 
-
+.bordered-menu-element1:nth-child(6){
+    position: relative;
+    left:-80px;
+}
 
     .menu ul{
         display: flex;
-        width:720px;
+        width:1520px;
         height:104px;
         margin-top: 0;
         top:-20px;
@@ -1958,6 +1970,7 @@ section .text-for-767px{
         height: 24px;
         width:246px;
         padding-right: 15px;
+        z-index: 1;
 
     }
     .menu-main__list li{
@@ -1966,6 +1979,7 @@ section .text-for-767px{
         width:223px;
         margin-left:-5px;
         margin-bottom: -60px;
+        z-index: 1;
     }
     li a{
         width:221px;
@@ -2034,7 +2048,7 @@ section .text-for-767px{
     section .container-for-img {
         position: absolute;
         display: flex;
-        width: 100%;
+        width: 500px;
         height: 80%;
         left: 384px;
         top: -20px;
@@ -2048,14 +2062,14 @@ section .text-for-767px{
     .CPS-img {
         position: relative;
         bottom: 35px;
-        background-image: url("img/CPS.png");
+
         background-size:511px 307px;
-        top:200px;
+        top:170px;
         width: 80%;
         height: 70%;
         background-size:55%;
         background-repeat: no-repeat;
-
+        left:100px;
     }
 
     .arrow-lower {
@@ -2113,7 +2127,7 @@ section .text-for-767px{
     .brands{
         position: relative;
         display: flex;
-        width:100%;
+        width:150%;
         height:322px;
         border-top: 1px solid #D9FFF5;
         overflow: hidden;
@@ -2180,7 +2194,7 @@ section .text-for-767px{
     section{
         position: absolute;
         display:flex;
-        width: 110%;
+        width: 150%;
         height :535px;
         background-color:#F8F8F8;
         margin-top:-8px;
@@ -2468,7 +2482,7 @@ section .text-for-767px{
     }
     .reply{
         top:-60px;
-        left: 33%;
+        left: 75%;
         width:440px;
         height:940px;
     }
@@ -2488,7 +2502,7 @@ section .text-for-767px{
     .call-back {
         position: relative;
         top: -70px;
-        left: 32%;
+        left: 75%;
         width: 440px;
         height: 940px;
     }
@@ -2520,7 +2534,7 @@ section .text-for-767px{
 .line{
     display: none;
     position: absolute;
-    width: 3000px;
+    width: 131%;
     height:3000px;
     z-index: 7;
     left:-500px;
