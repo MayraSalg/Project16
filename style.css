@@ -2135,6 +2135,7 @@ section .text-for-767px{
     }
     .navigation-menu{
         height:100%;
+        width:320px !important;
     }
 }
 @media(min-width:1120px){
@@ -2209,7 +2210,7 @@ section .text-for-767px{
     section{
         position: absolute;
         display:flex;
-        width: 150%;
+        max-width: 100%;
         height :535px;
         background-color:#F8F8F8;
         margin-top:-8px;
@@ -2423,7 +2424,7 @@ section .text-for-767px{
         left:30px;
     }
     .navigation-menu{
-        position: absolute;
+        position: absolute !important;
         display: inline !important;
         left:6px;
         width:320px;
@@ -2496,8 +2497,8 @@ section .text-for-767px{
         left:-35px;
     }
     .reply{
-        top:-60px;
-        left: 75%;
+        top:0px;
+        left: 70%;
         width:440px;
         height:940px;
     }
@@ -2516,14 +2517,15 @@ section .text-for-767px{
     }
     .call-back {
         position: relative;
-        top: -70px;
-        left: 75%;
+        top: 0px;
+        left: 70%;
         width: 440px;
         height: 940px;
     }
     .close-button-img{
         position: relative;
-        left:-10px;
+        left:-70px;
+        top:40px;
     }
     .reply-footer__call-back p{
         width:376px;
@@ -2538,6 +2540,7 @@ section .text-for-767px{
         top: 1218px;
         left: 330px;
         height: 180px;
+        max-width: 100%;
     }
     .footer-container p:nth-child(3){
         width:330px;
@@ -2550,31 +2553,41 @@ section .text-for-767px{
     display: none;
     position: absolute;
     width: 131%;
-    height:3000px;
+    height:2500px;
     z-index: 7;
     left:-500px;
 }
 .menu_container{
     top:30px;
 }
+.close-button-img__callback{
+    left:-80px;
+    top:40px;
+}
 
 }
-@media(min-width:1200px){
-    .footer-container{
-        max-width:1000px;
+
+@media(min-width:1400px) {
+    .footer-container {
+        max-width: 1000px;
     }
-    section{
+
+    section {
         max-width: 76%;
     }
-
-
-
-
-
-
+    .text-out-repair{
+        top:30px !important;
+        left:30px !important;
+    }
 
 
 
 
 
 }
+
+
+
+
+
+
