@@ -687,7 +687,7 @@ section .text-for-767px{
         margin-top:5px;
         font-family:"TTLakes-Regular",sans-serif;
         width:220px;
-        top:10px;
+        top:0px;
         position: relative;
         text-align: left;
         left:40px;
@@ -711,7 +711,7 @@ section .text-for-767px{
         height: 200px;
         background-color: #FFFFFF;
         position: absolute;
-        top:434px;
+        top:390px;
         left:26px;
         position: absolute;
 
@@ -793,7 +793,7 @@ section .text-for-767px{
         font-size: 16px;
         letter-spacing: -0.2px;
         font-weight: 500;
-        top:56px;
+        top:47px;
         position:absolute;
     }
     .navigation__contacts h1{
@@ -801,7 +801,7 @@ section .text-for-767px{
         font-size: 16px;
         letter-spacing: -0.2px;
         font-weight: 700;
-        top:12px;
+        top:0px;
         left:-15px;
 
     }
@@ -809,7 +809,7 @@ section .text-for-767px{
         width:100px;
         height:30px;
         background-color: #FFFFFF;
-        top:164px;
+        top:92px;
         position: absolute;
         font-family:"TTLakes-Regular",sans-serif;
         font-size: 16px;
