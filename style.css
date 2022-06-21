@@ -2137,6 +2137,11 @@ section .text-for-767px{
         height:100%;
         width:342px !important;
     }
+
+    .menu-list li a {
+        margin-top: 35px;
+
+    }
 }
 @media(min-width:1120px){
 
