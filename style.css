@@ -684,13 +684,13 @@ section .text-for-767px{
     }
 
     .menu-list li a{
-        margin-top:32px;
+        margin-top:5px;
         font-family:"TTLakes-Regular",sans-serif;
         width:220px;
         top:10px;
         position: relative;
         text-align: left;
-        left:30px;
+        left:40px;
         color: black;
         width:216px;
         font-weight: 500;
@@ -711,7 +711,7 @@ section .text-for-767px{
         height: 200px;
         background-color: #FFFFFF;
         position: absolute;
-        top:704px;
+        top:434px;
         left:26px;
         position: absolute;
 
