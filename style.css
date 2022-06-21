@@ -2135,7 +2135,7 @@ section .text-for-767px{
     }
     .navigation-menu{
         height:100%;
-        width:320px !important;
+        width:342px !important;
     }
 }
 @media(min-width:1120px){
@@ -2430,6 +2430,8 @@ section .text-for-767px{
         width:320px;
         z-index: 1;
         box-shadow: none;
+        height:330% !important;
+        background-color: white;
     }
     .navigation__close-button{
         display: none;
@@ -2564,6 +2566,9 @@ section .text-for-767px{
     left:-80px;
     top:40px;
 }
+html{
+    background-color: #F8F8F8;
+}
 
 }
 
@@ -2579,14 +2584,25 @@ section .text-for-767px{
         top:30px !important;
         left:30px !important;
     }
-
-
-
-
+    .navigation-menu{
+        height:250% !important;
+    }
 
 }
-
-
+@media(min-width:1450px){
+    .text-out-repair{
+        top:190px !important;
+        left:-930px !important;
+    }
+}
+@media(min-width:1500px){
+    .navigation-menu{
+        height:2100px !important;
+    }
+    section {
+        max-width: 86%;
+    }
+}
 
 
 
