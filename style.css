@@ -867,11 +867,13 @@ section .text-for-767px{
         top:20px;
         left:15px;
         position: relative;
+        z-index: 1;
     }
     .close-button-img{
-        top:20px;
+        top:10px;
         left:15px;
         position: relative;
+        z-index: 1;
     }
     .close-button__call-back a{
         position: relative;
@@ -894,7 +896,7 @@ section .text-for-767px{
    .highlight-line{
        position: relative;
        left:30px;
-       top:0px;
+       top:-30px;
    }
 
    .highlight-line p{
@@ -913,13 +915,13 @@ section .text-for-767px{
        height:330px;
        background-color: white;
        position: absolute;
-       top:160px;
+       top:100px;
        z-index: 7;
    }
    .reply-body__form{
 
        width:268px;
-       height:48px;
+       height:38px;
        margin-left:16px;
        border: 1px solid #EAEAEA;
        border-radius: 8px;
@@ -942,14 +944,14 @@ section .text-for-767px{
     }
     .reply-footer{
         position: relative;
-        top:0px;
+        top:-100px;
         width:288px;
         z-index: 7;
         height:64px;
     }
     .reply-footer__call-back{
         position: relative;
-        top:-270px;
+        top:-320px;
         width:288px;
         z-index: 7;
         height:64px;
@@ -984,7 +986,7 @@ section .text-for-767px{
     }
     .submit-img{
         position: relative;
-        top: 350px;
+        top: 340px;
         left: 167px;
     }
 
@@ -2444,6 +2446,9 @@ section .text-for-767px{
     .navigation__logo-button{
         left:20px;
     }
+  .navigation__languages{
+      top:122px;
+  }
     .navigation-body-container__decoration{
         position:relative;
         left:5px;
