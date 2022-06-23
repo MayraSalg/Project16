@@ -398,6 +398,35 @@ header
     border-radius: 20px;
 
   }
+  .contact-button {
+    display: flex;
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left:72.19%;
+    top: 24px;
+    border-radius: 20px;
+
+  }
+
+
+  .message-button {
+    display: flex;
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left:65.05%;
+    top: 24px;
+    border-radius: 20px;
+
+  }
+
+
+
+
+
 
 }
 @media(min-width:1120px){
